@@ -1,0 +1,21 @@
+const start = () => {
+
+    const kelvin = 292;
+    //I chose a constant variable knowing that kelvin was going to stay the same.
+    console.log("The Kelvin temp = " + kelvin + " degrees.");
+    //kelvin = 293, celsius = 273-293         celsius=20 degrees
+    const celsius = kelvin - 273;
+    console.log("The Celsius temp = " + celsius + " degrees.");
+    //I used kelvin as being apart of the equation knowing that it was a constant variable.  Then I used "Kelvin" to subtract the difference between "kelvin" and "celsius"
+    //Round down
+    let newton = celsius * (33 / 100);
+    newton = Math.floor(newton);
+    console.log(`The Newton temp = ${newton} degrees.`);
+    let fahrenheit = celsius * (9 / 5) + 32;
+    /*console.log('The Fahrenheit temp = ' + fahrenheit);
+    //this line of code is used to explain the literal thought process behind solving celsius * (9/5) + 32; then storing it into the variable "fahrenheit".  Using String Interpolation. */
+    fahrenheit = Math.floor(fahrenheit);
+    console.log(`The Fahrenheit temp = ${fahrenheit} degrees.`);
+};
+
+start();
